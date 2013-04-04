@@ -24,7 +24,7 @@ void phone_support_init(){
   PORTB |= 1 << PB1;       // Enable pull-up for switch on PORTC bit 1
   PORTB |= 1 << PB2;       // Enable pull-up for switch on PORTC bit 2
   
-  suart_puts("SUART Initializedr\n");
+  suart_puts("Phone Support Intialized\n");
 
 }
 
