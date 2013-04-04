@@ -47,7 +47,6 @@ int main(void)
 
   while(1){
     
-    suart_puts("Start of Loop\r\n");
     phone_support();
     
   }
