@@ -24,19 +24,10 @@ void phone_support_init(){
   PORTB |= 1 << PB1;       // Enable pull-up for switch on PORTC bit 1
   PORTB |= 1 << PB2;       // Enable pull-up for switch on PORTC bit 2
   
-  suart_puts("Phone Support Intialized\n");
+  suart_puts("Phone Support Intialized\r\n");
 
 }
 
 void phone_support(){
 
-  while (1) {
-    
-    if (PINB & 0x04){
-      PORTB |= 1 << PB0;
-    }
-    else{
-      PORTB &= ~(1 << PB0);
-    }
-  }
 }
