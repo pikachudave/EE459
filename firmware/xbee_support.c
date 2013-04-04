@@ -7,5 +7,3 @@
 //
 
 #include "xbee_support.h"
-
-sdlkjsdflk
