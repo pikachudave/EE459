@@ -41,7 +41,8 @@ int main(void)
 {
   //Initialize the Software UART
   suart_init();
-  
+  suart_puts("SUARt Initializedr\n");
+
   while(1){
     
     suart_puts("Start of Loop\r\n");

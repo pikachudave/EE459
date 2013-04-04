@@ -50,7 +50,7 @@ void suart_putchar(char c){
   
   //Set Stop Bit
   set_tx_pin(1);
-  _delay_ms(1000);
+  _delay_ms(suart_bit_length);
   
 
 }
