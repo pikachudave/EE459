@@ -6,6 +6,10 @@
 //
 //
 
+#include "phone_support.h"
+#include "suart_459.h"
+
+
 int phone_get_sample(int channel_number){
   if (channel_number == 1) {
     return (PINB & 0x04);
@@ -19,7 +23,11 @@ void phone_support_init(){
   
   PORTB |= 1 << PB1;       // Enable pull-up for switch on PORTC bit 1
   PORTB |= 1 << PB2;       // Enable pull-up for switch on PORTC bit 2
+  
+  suart_puts("SUART Initializedr\n");
+
 }
+
 void phone_support(){
 
   while (1) {

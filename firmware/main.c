@@ -41,7 +41,9 @@ int main(void)
 {
   //Initialize the Software UART
   suart_init();
-  suart_puts("SUARt Initializedr\n");
+  
+  //Initialize Phone Support Init
+  phone_support_init();
 
   while(1){
     
