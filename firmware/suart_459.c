@@ -29,7 +29,7 @@ void suart_init(){
   
   //Clear Screen
   suart_puts("\E[H\E[J");
-  suart_puts("SUART Initializedr\n");
+  suart_puts("SUART Initialized\r\n");
 
   
 }
