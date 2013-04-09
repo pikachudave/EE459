@@ -48,6 +48,27 @@ int main(void)
   while(1){
     
     phone_support();
+    /* DDRA = 0;                    // Set PORTA as Input
+  PORTA = 0;
+
+  // Initial ATMega168 UART Peripheral
+  suart_init();
+  // Initial ATMega168 TWI/I2C Peripheral
+  TWSR = 0x00;   // Select Prescaler of 1
+  // SCL frequency = 11059200 / (16 + 2 * 48 * 1) = 98.743 khz
+  TWBR = 0x30;   // 48 Decimal
+
+  TCCR2A=0b10000011;            // Fast PWM MODE, Clear on OCRA
+  TCCR2B=0b00000100;            // Used fclk/64 prescaller
+ // Initial ATMega168 PWM using Timer/Counter2 Peripheral
+
+ // Initial ATMega168 Timer/Counter0 Peripheral
+  TCCR0A=0x00;                  // Normal Timer0 Operation
+  TCCR0B=(1<<CS02)|(1<<CS00);   // Use maximum prescaller: Clk/1024
+  TCNT0=0x94;                   // START counter from 0x94, overflow at 10 mSec
+  TIMSK0=(1<<TOIE0);            // Enable Counter Overflow Interrupt
+  sei();                        // Enable Interrupt
+   */
     
   }
   
